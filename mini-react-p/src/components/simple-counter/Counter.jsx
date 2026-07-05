@@ -18,6 +18,24 @@ function Counter() {
       >
         Increase
       </button>
+      <button
+        onClick={()=>{if(count >= 5) setCount(count - 5)}}
+        style={{ marginLeft: "10px" }}
+      >
+        Decrease -5
+      </button>
+      <button
+        onClick={() => setCount(count + 5)}
+        style={{ marginLeft: "10px" }}
+      >
+        Increase +5
+      </button>
+      <button
+        onClick={() => setCount(0)}
+        style={{ marginLeft: "10px" }}
+      >
+        Reset
+      </button>
     </div>
   )
 }
