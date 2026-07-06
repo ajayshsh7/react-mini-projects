@@ -1,4 +1,5 @@
 import Counter from "../components/simple-counter/Counter";
+import Todo from "../components/simple-todo/Todo";
 
 export const projects = [
   {
@@ -7,12 +8,12 @@ export const projects = [
     route: "/counter",
     component: Counter,
   },
-//   {
-//     id: 2,
-//     name: "Todo App",
-//     route: "/todo",
-//     component: Todo,
-//   },
+  {
+    id: 2,
+    name: "Todo App",
+    route: "/todo",
+    component: Todo,
+  },
 //   {
 //     id: 3,
 //     name: "Calculator",
