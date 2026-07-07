@@ -2,10 +2,20 @@ import { useState } from 'react'
 
 
 function Todo(){
-    <div>
-        <h1>Add Note</h1>
-        <input type="text" />
-    </div>
+
+
+
+    return(
+        <>
+        <form>
+            <div className='form'>
+                <label htmlFor="item"> Add Notes</label>
+                <input type="text" id='item' />
+            </div>
+            <button className='btn'>Add</button>
+        </form>
+        </>
+    );
 }
 
 export default Todo;
