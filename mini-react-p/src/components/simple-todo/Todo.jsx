@@ -8,6 +8,7 @@ function Todo(){
 
     function handleSubmit(e) {
         e.preventDefault();
+        if (newItem.trim() === "") return;
 
         setTodo(currentTodo => {
             return [
@@ -41,14 +42,14 @@ function Todo(){
         <>
         <form onSubmit={handleSubmit}>
             <div className='form'>
-                <label htmlFor="item"> Add Notes</label>
+                <label htmlFor="item"> Todo List</label>
                 <input value={newItem} 
                 onChange={e => setNewItem(e.target.value)}
                 type="text" id='item' />
             </div>
             <button className='btn'>Add</button>
         </form>
-        <h1>My Notes</h1>
+        <h1>My Todos</h1>
         <ul>
             {todo.map(todos =>{
                 return <li key={todos.id} style={{ listStyleType: "none" }}>
