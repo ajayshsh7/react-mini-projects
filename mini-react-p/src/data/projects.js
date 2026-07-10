@@ -1,3 +1,4 @@
+import Accordian from "../components/accordian/Accordian";
 import Counter from "../components/simple-counter/Counter";
 import Todo from "../components/simple-todo/Todo";
 
@@ -14,10 +15,10 @@ export const projects = [
     route: "/todo",
     component: Todo,
   },
-//   {
-//     id: 3,
-//     name: "Calculator",
-//     route: "/calculator",
-//     component: Calculator,
-//   },
+  {
+    id: 3,
+    name: "Accordian",
+    route: "/accordian",
+    component: Accordian,
+  },
 ];
