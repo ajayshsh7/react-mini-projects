@@ -1,4 +1,4 @@
-import Accordian from "../components/accordian/Accordian";
+import Accordian from "../components/accordian/Accordion";
 import Counter from "../components/simple-counter/Counter";
 import Todo from "../components/simple-todo/Todo";
 
